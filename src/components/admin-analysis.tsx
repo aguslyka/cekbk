@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { PieChart as PieChartIcon } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import { useAuth, apiFetch, FIELD_CONFIG, type View, selectedAnalysisUserId, KopSurat, ProfilSiswa, handlePrintPDF, getGrade, getRecommendation, getOverallRecommendation } from "@/lib/app-shared";
+import { useAuth, apiFetch, FIELD_CONFIG, type View, selectedAnalysisUserId, setSelectedAnalysisUserId, KopSurat, ProfilSiswa, handlePrintPDF, getGrade, getRecommendation, getOverallRecommendation } from "@/lib/app-shared";
 
 export default function AdminAnalysis({ onNavigate }: { onNavigate: (view: View) => void }) {
   const { user } = useAuth();

@@ -150,10 +150,12 @@ export const STATUS_CONFIG: Record<string, { label: string; color: string; bgCol
 let _selectedAnalysisUserId = "";
 let _selectedReportUserId = "";
 
+
 export function getSelectedAnalysisUserId() { return _selectedAnalysisUserId; }
 export function setSelectedAnalysisUserId(id: string) { _selectedAnalysisUserId = id; }
 export function getSelectedReportUserId() { return _selectedReportUserId; }
 export function setSelectedReportUserId(id: string) { _selectedReportUserId = id; }
+
 
 // ==================== KOP SURAT HELPER ====================
 export function KopSurat({ schoolSettings }: { schoolSettings: Record<string, string> }) {

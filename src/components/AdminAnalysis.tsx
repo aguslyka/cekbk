@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useAuth, apiFetch, FIELD_CONFIG, getGrade, setSelectedAnalysisUserId, type View } from "@/lib/app-shared";
+import { useAuth, apiFetch, FIELD_CONFIG, getGrade, selectedAnalysisUserId, setSelectedAnalysisUserId, type View } from "@/lib/app-shared";
 import { calculateOverallPercentage, getGradeInfo, type FieldName } from "@/lib/recommendations";
 
 export default function AdminAnalysis({ onNavigate }: { onNavigate: (view: View) => void }) {
